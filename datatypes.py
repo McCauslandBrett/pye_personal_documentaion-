@@ -27,22 +27,60 @@ def tup_driver():
 """
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 comments: 
+    -Index range [0-(N-1)]
+    -sort() no return value.Changes org lst  
+     If you want the org lst, use sorted()
     
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 """
 #list
     
-# list creation
-lst = []
 #list insertion
-    
-# list deletion
-    
-# list mutators
-    
-# list copy
+lst = []
+lst.append('a')
+lst.insert(1,'b')
+lst.insert(4, 'f') # since there is no 4 item it just insersts in back
 
-# list operators
+#list combining
+breeds = ['FrenchBulldog', 'pootle', 'GermanShepard']
+breeds1 = ['begal', 'lab']
+breeds.extend(breeds1)
+
+a =['a', 'a', 'a']
+b= ['b', 'b']
+a += b
+
+
+#list deletion
+lst.remove('a') #Return:None
+pop_value = lst.pop(2)
+pop_value = lst.pop() #Return/remove the last element in the list
+lst.clear()
+
+
+
+#list accessors
+pets = ['dog', 'cat', 'rabbit']
+access = pets[0]
+access = pets.index('dog')
+
+#list copy
+
+#   Shallow copy 
+og_lst = ['a', 'b', 'c', 'd']
+new_lst = og_lst
+new_lst.remove('a')
+
+
+#   Deep copy
+og_lst = ['a', 'b', 'c', 'd']
+new_lst = og_lst.copy()
+new_lst.remove('a')
+
+slicelst = ['cat', 'parrot']
+#deep copy using slicing
+slicenew_lst = slicelst[:]
+slicenew_lst.append('a')
 
 """
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -54,8 +92,14 @@ comments:
 
 # dictionary creation
 dct = {}
+# loop threw all keys and values
+for x, y in dct.items():
+  print(x, y)
+
+
 
 # dictionry insertion
+dct['f'] = 'f'
 
 # dictionary deletion
 
@@ -81,5 +125,17 @@ tup = {'a',1}
 # tuples mutators
 # tuples copy
 # tuples sorted
+
+"""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+comments: 
+    
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"""
+#matrix
+
+
+
+
 
 
