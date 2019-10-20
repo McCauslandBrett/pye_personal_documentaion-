@@ -35,13 +35,13 @@ comments:
 """
 #list
     
-#list insertion
+# list insertion
 lst = []
 lst.append('a')
 lst.insert(1,'b')
 lst.insert(4, 'f') # since there is no 4 item it just insersts in back
 
-#list combining
+# list combining
 breeds = ['FrenchBulldog', 'pootle', 'GermanShepard']
 breeds1 = ['begal', 'lab']
 breeds.extend(breeds1)
@@ -51,7 +51,7 @@ b= ['b', 'b']
 a += b
 
 
-#list deletion
+# list deletion
 lst.remove('a') #Return:None
 pop_value = lst.pop(2)
 pop_value = lst.pop() #Return/remove the last element in the list
@@ -59,7 +59,7 @@ lst.clear()
 
 
 
-#list accessors
+# list accessors
 pets = ['dog', 'cat', 'rabbit']
 access = pets[0]
 access = pets.index('dog')
