@@ -82,6 +82,14 @@ slicelst = ['cat', 'parrot']
 slicenew_lst = slicelst[:]
 slicenew_lst.append('a')
 
+# list iteration
+og_lst = ['a', 'b', 'c', 'd']
+count = len(og_lst)
+print(count)
+for i in range(0,count):
+    print(i)
+    print(og_lst[i])
+
 """
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 comments: 
